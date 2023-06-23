@@ -37,9 +37,7 @@ const pools = [
 ]
 
 const getTokensFromOneInch = async () => {
-    const { data } = await axios.get(
-        'https://api.1inch.exchange/v3.0/42161/tokens'
-    )
+    const { data } = await axios.get('https://api.1inch.io/v5.0/42161/tokens')
 
     return data.tokens
 }
